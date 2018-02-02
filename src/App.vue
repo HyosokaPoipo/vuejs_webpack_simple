@@ -1,6 +1,21 @@
 <template>
   <div id="app">
-    <img src="./assets/boruto_kage.png">
+    <div id="slider_wrapper">
+      <div id="slider">
+        <div class="slide_one slie">
+          <img src="./assets/boruto_kage.png">
+        </div>
+        <div class="slide_two slie">
+          <img src="./assets/boruto_rasenggan.png">
+        </div>
+        <div class="slide_three slie">
+          <img src="./assets/boruto_running.png">
+        </div>
+        <div class="slide_four slie">
+          <img src="./assets/boruto_miniatur.png">
+        </div>
+      </div>
+    </div>
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -57,5 +72,46 @@ li {
 
 a {
   color: #42b983;
+}
+
+#slider_wrapper {
+  float:center;
+  //width:500px;
+  //height:280px;
+  position:center;
+  overflow: hidden;
+
+}
+
+#slider {
+  width:1500px;
+  height:280px;
+  margin: 0 0 0 -1000px;
+  position: relative;
+   -webkit-animation-name: slide_animation;
+   -webkit-animation-duration:4s;
+   -webkit-animation-iteration-count:infinite;
+   -webkit-animation-direction:alternate;
+   -webkit-animation-play-state: running;
+}
+
+.slie {
+  position:relative;
+  float:center;
+  overflow:hidden;
+}
+
+@-webkit-keyframes slide_animation {
+  0% {left:0px;}
+  10% {left:500px;}
+  20% {left:500px;}
+  30% {left:500px;}
+  40% {left:500px;}
+  50% {left:500px;}
+  60% {left:500px;}
+  70% {left:1000px;}
+  80% {left:1000px;}
+  90% {left:1000px;}
+  100% {left:1000px;}
 }
 </style>
