@@ -5,7 +5,7 @@
         <div class="slide_one slie">
           <img src="./assets/boruto_kage.png">
         </div>
-        <div class="slide_two slie">
+        <!-- <div class="slide_two slie">
           <img src="./assets/boruto_rasenggan.png">
         </div>
         <div class="slide_three slie">
@@ -13,7 +13,7 @@
         </div>
         <div class="slide_four slie">
           <img src="./assets/boruto_miniatur.png">
-        </div>
+        </div> -->
       </div>
     </div>
     <h1>{{ msg }}</h1>
@@ -75,43 +75,38 @@ a {
 }
 
 #slider_wrapper {
-  float:center;
-  //width:500px;
-  //height:280px;
-  position:center;
   overflow: hidden;
 
 }
 
 #slider {
-  width:1500px;
-  height:280px;
-  margin: 0 0 0 -1000px;
   position: relative;
    -webkit-animation-name: slide_animation;
-   -webkit-animation-duration:4s;
+   -webkit-animation-duration:9s;
    -webkit-animation-iteration-count:infinite;
    -webkit-animation-direction:alternate;
    -webkit-animation-play-state: running;
 }
 
 .slie {
+  width:500px;
+  height: 370px;
   position:relative;
-  float:center;
+  float:left;
   overflow:hidden;
 }
 
 @-webkit-keyframes slide_animation {
   0% {left:0px;}
-  10% {left:500px;}
-  20% {left:500px;}
-  30% {left:500px;}
-  40% {left:500px;}
+  10% {left:100px;}
+  20% {left:200px;}
+  30% {left:300px;}
+  40% {left:400px;}
   50% {left:500px;}
-  60% {left:500px;}
-  70% {left:1000px;}
-  80% {left:1000px;}
-  90% {left:1000px;}
+  60% {left:600px;}
+  70% {left:700px;}
+  80% {left:800px;}
+  90% {left:900px;}
   100% {left:1000px;}
 }
 </style>
